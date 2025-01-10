@@ -48,7 +48,6 @@ def main():
     try:
         password = generate_password(length, use_uppercase, use_numbers, use_special)
         print(f"Generated Password: {password}")
-        save_option = input("Do you want to save the password to a file? (y/n): ").lower()
     except ValueError as e:
         print(f"Error: {e}")
 
